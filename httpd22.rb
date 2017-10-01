@@ -58,6 +58,7 @@ class Httpd22 < Formula
       --with-apr-util=#{Formula["apr-util"].opt_prefix}
       --with-ssl=#{Formula["openssl"].opt_prefix}
       --with-z=#{Formula["zlib"].opt_prefix}
+      --prefix=#{prefix}
     ]
 
     if build.with? "mpm-worker"
